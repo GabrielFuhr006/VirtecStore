@@ -1,0 +1,56 @@
+{
+  "updated": "2026-11-26T10:41:37.477Z",
+  "source": "https://virtecstore.com",
+  "products": [
+    {
+      "id": 1339,
+      "name": "iPhone 18 Pro Max",
+      "spec": "256GB · tela de 6.9″",
+      "price": 9990,
+      "url": "https://virtecstore.com/produto/iphone-18-pro-max-256gb-tela-de-6-9%e2%80%b3/",
+      "image": "https://virtecstore.com/wp-content/uploads/2026/09/1-2-1.png",
+      "thumb": "https://virtecstore.com/wp-content/uploads/2026/09/1-2-1-300x300.png",
+      "alt": "iPhone 18 Pro Max | 256GB | Tela de 6.9″"
+    },
+    {
+      "id": 1329,
+      "name": "iPhone 18 Pro",
+      "spec": "256GB · tela de 6.3″",
+      "price": 8790,
+      "url": "https://virtecstore.com/produto/iphone-18-pro-256gb-tela-de-6-3%e2%80%b3/",
+      "image": "https://virtecstore.com/wp-content/uploads/2026/09/2-2-1.png",
+      "thumb": "https://virtecstore.com/wp-content/uploads/2026/09/2-2-1-300x300.png",
+      "alt": "iPhone 18 Pro | 256GB | Tela de 6.3″"
+    },
+    {
+      "id": 1124,
+      "name": "MacBook Neo 13″",
+      "spec": "8GB RAM · 256GB SSD",
+      "price": 5490,
+      "url": "https://virtecstore.com/produto/macbook-neo-13-8gb-ram-256gb-ssd/",
+      "image": "https://virtecstore.com/wp-content/uploads/2026/05/1.png",
+      "thumb": "https://virtecstore.com/wp-content/uploads/2026/05/1-300x300.png",
+      "alt": "MacBook Neo 13″ – 8GB RAM – 256GB SSD"
+    },
+    {
+      "id": 1070,
+      "name": "Osmo Action 5 Pro Standard Combo",
+      "spec": "DJI",
+      "price": 3090,
+      "url": "https://virtecstore.com/produto/osmo-action-5-pro-dji/",
+      "image": "https://virtecstore.com/wp-content/uploads/2026/01/2.png",
+      "thumb": "https://virtecstore.com/wp-content/uploads/2026/01/2-300x300.png",
+      "alt": "Osmo Action 5 Pro Standard Combo| DJI"
+    },
+    {
+      "id": 893,
+      "name": "iPhone 17 Pro Max",
+      "spec": "256GB · tela de 6.9″",
+      "price": 7890,
+      "url": "https://virtecstore.com/produto/iphone-17-pro-max-256gb-tela-de-6-9%e2%80%b3/",
+      "image": "https://virtecstore.com/wp-content/uploads/2025/10/2-1.png",
+      "thumb": "https://virtecstore.com/wp-content/uploads/2025/10/2-1-300x300.png",
+      "alt": "iPhone 17 Pro Max | 256GB | Tela de 6.9″"
+    }
+  ]
+}

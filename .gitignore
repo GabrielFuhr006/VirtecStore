@@ -1,0 +1,15 @@
+# kit da skill de design (a página não usa mais)
+assets/*
+!assets/ig/
+!assets/img/
+!assets/prod/
+assets/ig/list.txt
+
+# ferramentas locais
+.taste-skill/
+shots/
+.claude/settings.local.json
+node_modules/
+.DS_Store
+Thumbs.db
+assets/ig/sheet.jpg

@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Virtec Store · iPhone, MacBook e drones DJI a pronta entrega</title>
+<meta name="description" content="Produtos Apple a pronta entrega e revenda autorizada DJI. Mais de 500 clientes atendidos. Parcelamento em até 18x e troca do seu seminovo.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Virtec Store · Apple e DJI a pronta entrega">
+<meta property="og:description" content="iPhone, MacBook, iPad, Apple Watch, AirPods e drones DJI. Mais de 500 entregas.">
+<meta property="og:image" content="assets/ig/ig-2026-11-18.jpg">
+<meta name="theme-color" content="#08090b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #08090b;
+  --bg-2: #101216;
+  --bg-3: #171a1f;
+  --ink: #f3f5f8;
+  --ink-2: #b4bac3;
+  --ink-3: #7d848e;
+  --blue: #1e90ff;
+  --blue-2: #5aaeff;
+  --wrap: 1240px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --r: 14px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  /* transitions.dev: motion tokens + tunables */
+  --duration-stagger: 40ms; --duration-quick: 150ms; --duration-fast: 250ms; --duration-very-slow: 500ms;
+  --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --stagger-dur: 500ms; --stagger-distance: 12px; --stagger-stagger: 40ms; --stagger-blur: 3px; --stagger-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --acc-expand: 250ms; --acc-collapse: 250ms; --acc-chevron: 250ms; --acc-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --learn-shift: 2px; --learn-spread: 8deg; --learn-in: 350ms; --learn-out: 350ms; --learn-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --reel-step-dur: 130ms; --reel-stagger: 90ms; --reel-ease: cubic-bezier(0.35, -0.02, 0.43, 1); --reel-cell: 1.2em;
+  --reel-side-scale: 0.7; --reel-side-offset: 0.52em; --reel-side-blur: max(0.067em, 0.171em - 2.1px); --reel-side-opacity: 0.17;
+  --reel-center-scale: 0.9; --reel-center-blur: 0.042em; --reel-antic-dur: 100ms; --reel-antic-scale: 0.94; --reel-antic-lift: 0.125em;
+  --reel-land-dur: 740ms; --reel-land-peak: 1.03;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Archivo", system-ui, sans-serif; font-size: 17px; line-height: 1.55;
+  font-feature-settings: "kern" 1; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { margin: 0; font-weight: 500; font-stretch: 112%; letter-spacing: -0.03em; line-height: 1.02; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+.wrap { width: min(100% - 2 * var(--gutter), var(--wrap)); margin-inline: auto; }
+.eyebrow { color: var(--blue-2); font-size: 15px; font-weight: 500; margin-bottom: 16px; display: block; }
+.lead { color: var(--ink-2); font-size: clamp(17px, 1.4vw, 20px); max-width: 52ch; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--bg); padding: 8px 12px; border-radius: 8px; z-index: 50; }
+.skip:focus { left: 8px; }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 6px; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 24px;
+  border-radius: 12px; font-weight: 600; font-size: 16px;
+  transition: background-color var(--duration-quick) var(--ease-smooth-out), transform var(--duration-quick) var(--ease-smooth-out);
+}
+.btn:active { transform: scale(.98); }
+.btn--primary { background: var(--blue); color: #fff; }
+.btn--primary:hover { background: #3a9dff; }
+.btn--ghost { background: var(--bg-3); color: var(--ink); }
+.btn--ghost:hover { background: #20242b; }
+
+.nav { position: fixed; inset: 0 0 auto; z-index: 40; background: rgba(8, 9, 11, .82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.nav__bar { display: flex; align-items: center; gap: 32px; height: 72px; }
+.logo { display: block; flex: none; }
+.logo img { height: 36px; width: auto; }
+.footer .logo img { height: 44px; }
+.nav__links { display: flex; gap: 28px; margin-right: auto; }
+.nav__links a { color: var(--ink-2); font-size: 15px; transition: color var(--duration-quick) var(--ease-smooth-out); }
+.nav__links a:hover { color: var(--ink); }
+.nav .btn { height: 42px; padding: 0 18px; font-size: 15px; }
+.nav__toggle { display: none; margin-left: auto; background: var(--bg-3); color: var(--ink); border: 0; width: 44px; height: 44px; border-radius: 10px; }
+
+.hero { padding: 132px 0 72px; }
+.hero__grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(44px, 6.4vw, 92px); }
+.hero h1 span { color: var(--blue); }
+.hero .lead { margin-top: 24px; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.hero__media { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.hero__media figure:nth-child(2) { margin-top: 72px; }
+.photo { margin: 0; border-radius: var(--r); overflow: hidden; background: var(--bg-3); aspect-ratio: 9 / 14; display: block; }
+.photo img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-fast) var(--ease-smooth-out); }
+a:hover .photo img, a.photo:hover img { transform: scale(1.03); }
+
+.stats { padding: 40px 0 96px; }
+.stats__row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stat { background: var(--bg-2); border-radius: var(--r); padding: 28px; }
+.stat b { display: block; font-size: clamp(32px, 3.4vw, 48px); font-weight: 500; font-stretch: 112%; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat b em { font-style: normal; color: var(--blue); }
+.stat > span { display: block; margin-top: 10px; color: var(--ink-2); font-size: 15px; }
+
+.section { padding: 112px 0; }
+.section--alt { background: var(--bg-2); }
+.section__head { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: end; margin-bottom: 56px; }
+.section__head h2 { font-size: clamp(36px, 4.4vw, 64px); }
+
+.catalog { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.item { position: relative; border-radius: var(--r); overflow: hidden; background: var(--bg-3); min-height: 440px; display: flex; flex-direction: column; justify-content: flex-end; isolation: isolate; }
+.item .photo { position: absolute; inset: 0; aspect-ratio: auto; border-radius: 0; z-index: -2; }
+.item::after { content: ""; position: absolute; inset: 40% 0 0; background: linear-gradient(to top, rgba(8,9,11,.92), rgba(8,9,11,0)); z-index: -1; }
+.item__body { padding: 28px; }
+.item h3 { font-size: 30px; }
+.item p { color: var(--ink-2); margin-top: 8px; font-size: 16px; max-width: 36ch; }
+.item--wide { grid-column: span 7; }
+.item--narrow { grid-column: span 5; }
+.item--third { grid-column: span 4; min-height: 280px; }
+.item--text { justify-content: space-between; }
+.item--text::after { display: none; }
+.item--text .tag { padding: 28px 28px 0; color: var(--blue-2); font-size: 15px; font-weight: 500; }
+.item--blue { background: var(--blue); }
+.item--blue p { color: rgba(255,255,255,.88); }
+.item--blue .tag { color: #fff; }
+
+.reasons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 56px 72px; }
+.reason { display: grid; grid-template-columns: 56px 1fr; gap: 20px; }
+.reason__n { width: 56px; height: 56px; border-radius: 14px; background: var(--bg-3); color: var(--blue-2); display: grid; place-items: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+.reason h3 { font-size: 24px; letter-spacing: -0.02em; }
+.reason p { color: var(--ink-2); margin-top: 10px; }
+
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.gallery .photo:nth-child(even) { transform: translateY(48px); }
+.gallery__foot { margin-top: 96px; display: flex; justify-content: center; }
+
+.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: s; }
+.steps li { background: var(--bg-3); border-radius: var(--r); padding: 32px; min-height: 260px; display: flex; flex-direction: column; }
+.steps li::before { counter-increment: s; content: "0" counter(s); color: var(--blue); font-size: 44px; font-weight: 500; font-stretch: 112%; line-height: 1; margin-bottom: auto; font-variant-numeric: tabular-nums; }
+.steps h3 { font-size: 22px; letter-spacing: -0.02em; margin-top: 40px; }
+.steps p { color: var(--ink-2); margin-top: 10px; font-size: 16px; }
+
+.dji { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.dji h2 { font-size: clamp(36px, 4.4vw, 64px); }
+.dji .lead { margin-top: 24px; }
+.dji ul { list-style: none; padding: 0; margin: 32px 0 36px; display: grid; gap: 14px; }
+.dji li { display: flex; gap: 12px; color: var(--ink-2); }
+.dji li::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); margin-top: 9px; }
+.dji__media { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.dji__media .photo:last-child { margin-top: 72px; }
+
+.faq { max-width: 860px; }
+
+.cta { padding: 120px 0; text-align: center; background: radial-gradient(ellipse 60% 80% at 50% 100%, rgba(30, 144, 255, .16), transparent 70%); }
+.cta h2 { font-size: clamp(40px, 6vw, 84px); max-width: 14ch; margin-inline: auto; }
+.cta .lead { margin: 24px auto 0; }
+.cta .hero__actions { justify-content: center; }
+.footer { padding: 56px 0 40px; background: var(--bg-2); }
+.footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+.footer h3 { font-size: 15px; font-weight: 600; letter-spacing: 0; margin-bottom: 14px; }
+.footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.footer ul a { color: var(--ink-3); font-size: 15px; transition: color var(--duration-quick) var(--ease-smooth-out); }
+.footer ul a:hover { color: var(--ink); }
+.footer__about p { color: var(--ink-3); font-size: 15px; margin-top: 16px; max-width: 34ch; }
+.footer__legal { margin-top: 48px; color: var(--ink-3); font-size: 14px; }
+
+.reveal { opacity: 0; transform: translateY(var(--stagger-distance)); filter: blur(var(--stagger-blur)); transition: opacity var(--stagger-dur) var(--stagger-ease), transform var(--stagger-dur) var(--stagger-ease), filter var(--stagger-dur) var(--stagger-ease); }
+.reveal.is-in { opacity: 1; transform: none; filter: none; }
+.gallery .photo.reveal.is-in:nth-child(even) { transform: translateY(48px); }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+
+/* transitions.dev 18: texts reveal */
+.t-stagger-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(var(--stagger-distance));
+  filter: blur(var(--stagger-blur));
+  transition:
+    opacity   var(--stagger-dur) var(--stagger-ease),
+    transform var(--stagger-dur) var(--stagger-ease),
+    filter    var(--stagger-dur) var(--stagger-ease);
+  will-change: transform, opacity, filter;
+}
+.t-stagger-line--2 { transition-delay: var(--stagger-stagger); }
+.t-stagger-line--3 { transition-delay: calc(var(--stagger-stagger) * 2); }
+.t-stagger-line--4 { transition-delay: calc(var(--stagger-stagger) * 3); }
+.t-stagger.is-shown .t-stagger-line {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.t-stagger.is-hiding .t-stagger-line {
+  opacity: 0;
+  transform: translateY(0);
+  filter: blur(0);
+  transition:
+    opacity 200ms ease,
+    transform 0s linear,
+    filter 0s linear;
+  transition-delay: 0s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .t-stagger-line { transition: none !important; }
+}
+
+/* transitions.dev 21: accordion expand */
+.t-acc-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--acc-collapse) var(--acc-ease);
+}
+.t-acc[data-open="true"] .t-acc-panel {
+  grid-template-rows: 1fr;
+  transition: grid-template-rows var(--acc-expand) var(--acc-ease);
+}
+.t-acc-panel-inner {
+  overflow: hidden;
+  opacity: 0;
+  filter: blur(2px);
+  transition:
+    opacity var(--acc-collapse) var(--acc-ease),
+    filter var(--acc-collapse) var(--acc-ease);
+}
+.t-acc[data-open="true"] .t-acc-panel-inner {
+  opacity: 1;
+  filter: blur(0);
+  transition:
+    opacity var(--acc-expand) var(--acc-ease),
+    filter var(--acc-expand) var(--acc-ease);
+}
+.t-acc-chevron {
+  display: inline-flex;
+  transform: scaleY(1);
+  transform-origin: center;
+  transition: transform var(--acc-chevron) var(--acc-ease);
+}
+.t-acc-chevron path { vector-effect: non-scaling-stroke; }
+.t-acc[data-open="true"] .t-acc-chevron {
+  transform: scaleY(-1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .t-acc-panel, .t-acc-panel-inner, .t-acc-chevron {
+    transition: none !important;
+  }
+}
+
+/* transitions.dev 24: learn more hover */
+.t-learn-chevron {
+  display: inline-flex;
+  transform: translateX(0);
+  transition: transform var(--learn-out) var(--learn-ease);
+}
+.t-learn-arm {
+  transform-box: view-box;
+  transform-origin: 10px 8px;
+  vector-effect: non-scaling-stroke;
+  transition: transform var(--learn-out) var(--learn-ease);
+}
+.t-learn:hover .t-learn-chevron { transform: translateX(var(--learn-shift)); transition-duration: var(--learn-in); }
+.t-learn:hover .t-learn-arm { transition-duration: var(--learn-in); }
+.t-learn:hover .t-learn-arm-top { transform: rotate(var(--learn-spread)); }
+.t-learn:hover .t-learn-arm-bot { transform: rotate(calc(var(--learn-spread) * -1)); }
+@media (prefers-reduced-motion: reduce) {
+  .t-learn-chevron, .t-learn-arm { transition: none !important; }
+}
+
+/* transitions.dev 26: spinning counter */
+.t-reel {
+  display: inline-flex;
+  align-items: center;
+  height: var(--reel-cell);
+  font-variant-numeric: tabular-nums;
+}
+.t-reel-col {
+  position: relative;
+  display: inline-block;
+  height: var(--reel-cell);
+  line-height: var(--reel-cell);
+}
+.t-reel-sizer { visibility: hidden; }
+.t-reel-digit {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform, filter, opacity;
+}
+.t-reel-sep {
+  display: inline-block;
+  height: var(--reel-cell);
+  line-height: var(--reel-cell);
+}
+@media (prefers-reduced-motion: reduce) {
+  .t-reel-digit { filter: none !important; }
+}
+
+/* ajustes da página para os snippets */
+.t-learn-chevron svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.stat b .t-reel { height: 1em; }
+.stat b .t-reel-col, .stat b .t-reel-sep { height: 1em; line-height: 1em; }
+.faq .t-acc { background: var(--bg-3); border-radius: var(--r); margin-bottom: 12px; }
+.faq .t-acc-head { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; padding: 24px 28px; font-size: 19px; font-weight: 500; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: color var(--duration-quick) ease; }
+.faq .t-acc-head:hover { color: #fff; }
+.faq .t-acc-head:focus-visible { outline: 2px solid var(--blue); outline-offset: -2px; border-radius: var(--r); }
+.t-acc-chevron svg { width: 20px; height: 20px; fill: none; stroke: var(--blue); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.faq .t-acc-panel-inner p { padding: 0 28px 24px; color: var(--ink-2); max-width: 64ch; }
+
+
+/* vitrine */
+.prods { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.prod { display: flex; flex-direction: column; background: #000; border-radius: var(--r); padding: 20px 20px 24px; transition: background-color var(--duration-fast) var(--ease-smooth-out); }
+.prod:hover { background: #0d0f13; }
+.prod__img { display: block; aspect-ratio: 1; margin: -8px -8px 16px; overflow: hidden; border-radius: 10px; }
+.prod__img img { width: 100%; height: 100%; object-fit: contain; transition: transform var(--duration-fast) var(--ease-smooth-out); }
+.prod:hover .prod__img img { transform: scale(1.04); }
+.prod__name { font-size: 18px; font-weight: 500; line-height: 1.2; }
+.prod__spec { color: var(--ink-3); font-size: 14px; margin-top: 4px; }
+.prod__price { font-size: 24px; font-weight: 500; font-stretch: 112%; letter-spacing: -0.02em; margin-top: 16px; font-variant-numeric: tabular-nums; }
+.prod__price small { font-size: 15px; color: var(--ink-3); }
+.prod__more { display: inline-flex; align-items: center; gap: 6px; color: var(--blue-2); font-size: 15px; font-weight: 500; margin-top: auto; padding-top: 16px; }
+.prod__more svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.prod:hover .t-learn-chevron { transform: translateX(var(--learn-shift)); }
+.prod:hover .t-learn-arm-top { transform: rotate(var(--learn-spread)); }
+.prod:hover .t-learn-arm-bot { transform: rotate(calc(var(--learn-spread) * -1)); }
+
+/* troca */
+.troca { display: grid; grid-template-columns: 1.1fr 1fr; gap: 72px; align-items: center; }
+.troca h2 { font-size: clamp(36px, 4.4vw, 64px); }
+.troca .lead { margin-top: 24px; }
+.troca__steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.troca__steps li { display: grid; grid-template-columns: 56px 1fr; gap: 20px; align-items: center; background: var(--bg-2); border-radius: var(--r); padding: 24px; }
+.troca__steps b { color: var(--blue); font-size: 28px; font-weight: 500; font-stretch: 112%; font-variant-numeric: tabular-nums; }
+.troca__steps span { color: var(--ink-2); }
+
+@media (max-width: 1024px) {
+  .prods { grid-template-columns: repeat(3, 1fr); }
+  .troca { grid-template-columns: 1fr; gap: 40px; }
+  .hero__grid, .dji, .section__head { grid-template-columns: 1fr; gap: 40px; }
+  .stats__row { grid-template-columns: repeat(2, 1fr); }
+  .item--wide, .item--narrow { grid-column: span 12; }
+  .item--third { grid-column: span 6; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 720px) {
+  .prods { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .prod { padding: 14px 14px 18px; }
+  .prod__name { font-size: 16px; }
+  .prod__price { font-size: 20px; }
+  body { font-size: 16px; }
+  .nav__links, .nav__bar > .btn { display: none; }
+  .nav__toggle { display: grid; place-items: center; }
+  .nav.is-open .nav__links { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--bg); padding: 24px var(--gutter) 32px; gap: 20px; }
+  .nav.is-open .nav__links a { font-size: 22px; color: var(--ink); }
+  .hero { padding: 104px 0 48px; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+  .hero__media figure:nth-child(2), .dji__media .photo:last-child { margin-top: 40px; }
+  .stats { padding: 24px 0 72px; }
+  .stat { padding: 20px; }
+  .section { padding: 80px 0; }
+  .item, .item--third { grid-column: span 12; min-height: 380px; }
+  .item--text { min-height: 220px; }
+  .reasons, .steps { grid-template-columns: 1fr; gap: 32px; }
+  .steps { gap: 12px; }
+  .steps li { min-height: 0; }
+  .gallery .photo:nth-child(even), .gallery .photo.reveal.is-in:nth-child(even) { transform: translateY(32px); }
+  .gallery__foot { margin-top: 64px; }
+  .footer__grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__bar">
+    <a class="logo" href="#topo" aria-label="Virtec Store, início"><img src="assets/img/logo-virtec-crop.png" alt="Virtec Store" width="512" height="192"></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#destaques">Destaques</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#troca">Troca</a>
+      <a href="#por-que">Por que a Virtec</a>
+      <a href="#dji">DJI</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn--primary t-learn" href="https://api.whatsapp.com/send?phone=5551995563974&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Virtec%20e%20quero%20um%20or%C3%A7amento">Chamar no WhatsApp</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="hero" id="topo">
+    <div class="wrap hero__grid">
+      <div class="t-stagger" data-stagger>
+        <span class="eyebrow t-stagger-line t-stagger-line--1">Apple e DJI a pronta entrega</span>
+        <h1 class="t-stagger-line t-stagger-line--2">Seu próximo iPhone já está <span>na Virtec</span></h1>
+        <p class="lead t-stagger-line t-stagger-line--3">iPhone, MacBook, iPad, Apple Watch, AirPods e drones DJI a pronta entrega, em até 18x no cartão. Aceitamos o seu Apple seminovo na troca.</p>
+        <div class="hero__actions t-stagger-line t-stagger-line--4">
+          <a class="btn btn--primary t-learn" href="https://api.whatsapp.com/send?phone=5551995563974&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Virtec%20e%20quero%20um%20or%C3%A7amento">Chamar no WhatsApp <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+          <a class="btn btn--ghost" href="https://virtecstore.com/produtos">Ver loja online</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <figure class="photo reveal"><img src="assets/ig/ig-2026-11-18.jpg" alt="Atendente da Virtec segurando um iPhone na loja, com o logo em neon ao fundo" fetchpriority="high"></figure>
+        <figure class="photo reveal"><img src="assets/ig/ig-2026-07-07.jpg" alt="Balcão da Virtec com caixas de iPhone e o logo da loja na parede"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="A Virtec em números">
+    <div class="wrap stats__row">
+      <div class="stat reveal"><b><span class="t-reel" data-reel="500" aria-label="500">500</span><em>+</em></b><span>produtos Apple entregues</span></div>
+      <div class="stat reveal"><b>DJI</b><span>revendedor autorizado</span></div>
+      <div class="stat reveal"><b>até <span class="t-reel" data-reel="18" aria-label="18">18</span>x</b><span>de parcelamento no cartão</span></div>
+      <div class="stat reveal"><b>Imediata</b><span>entrega dos produtos em estoque</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="destaques">
+    <div class="wrap">
+      <div class="section__head t-stagger" data-stagger>
+        <div>
+          <span class="eyebrow t-stagger-line t-stagger-line--1">Destaques</span>
+          <h2 class="t-stagger-line t-stagger-line--2">Lançamentos a pronta entrega</h2>
+        </div>
+        <p class="lead t-stagger-line t-stagger-line--3">Os preços são os da loja online, à vista, e podem ser parcelados em até 18x no cartão.</p>
+      </div>
+      <div class="prods">
+        <a class="prod reveal" href="https://virtecstore.com/produto/iphone-18-pro-max-256gb-tela-de-6-9%e2%80%b3/">
+          <span class="prod__img"><img src="assets/prod/iphone-18-pro-max.webp" alt="iPhone 18 Pro Max" loading="lazy" width="800" height="800"></span>
+          <span class="prod__name">iPhone 18 Pro Max</span>
+          <span class="prod__spec">256 GB · tela de 6,9″</span>
+          <span class="prod__price">R$ 9.990<small>,00</small></span>
+          <span class="prod__more t-learn">Ver na loja <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></span>
+        </a>
+        <a class="prod reveal" href="https://virtecstore.com/produto/iphone-18-pro-256gb-tela-de-6-3%e2%80%b3/">
+          <span class="prod__img"><img src="assets/prod/iphone-18-pro.webp" alt="iPhone 18 Pro" loading="lazy" width="800" height="800"></span>
+          <span class="prod__name">iPhone 18 Pro</span>
+          <span class="prod__spec">256 GB · tela de 6,3″</span>
+          <span class="prod__price">R$ 8.790<small>,00</small></span>
+          <span class="prod__more t-learn">Ver na loja <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></span>
+        </a>
+        <a class="prod reveal" href="https://virtecstore.com/produto/macbook-neo-13-8gb-ram-256gb-ssd/">
+          <span class="prod__img"><img src="assets/prod/macbook-neo.webp" alt="MacBook Neo 13″" loading="lazy" width="800" height="800"></span>
+          <span class="prod__name">MacBook Neo 13″</span>
+          <span class="prod__spec">8 GB RAM · 256 GB SSD</span>
+          <span class="prod__price">R$ 5.490<small>,00</small></span>
+          <span class="prod__more t-learn">Ver na loja <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></span>
+        </a>
+        <a class="prod reveal" href="https://virtecstore.com/produto/osmo-action-5-pro-dji/">
+          <span class="prod__img"><img src="assets/prod/osmo-action-5.webp" alt="DJI Osmo Action 5 Pro" loading="lazy" width="800" height="800"></span>
+          <span class="prod__name">DJI Osmo Action 5 Pro</span>
+          <span class="prod__spec">Standard Combo</span>
+          <span class="prod__price">R$ 3.090<small>,00</small></span>
+          <span class="prod__more t-learn">Ver na loja <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></span>
+        </a>
+        <a class="prod reveal" href="https://virtecstore.com/produto/iphone-17-pro-max-256gb-tela-de-6-9%e2%80%b3/">
+          <span class="prod__img"><img src="assets/prod/iphone-17-pro-max.webp" alt="iPhone 17 Pro Max" loading="lazy" width="800" height="800"></span>
+          <span class="prod__name">iPhone 17 Pro Max</span>
+          <span class="prod__spec">256 GB · tela de 6,9″</span>
+          <span class="prod__price">R$ 7.890<small>,00</small></span>
+          <span class="prod__more t-learn">Ver na loja <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></span>
+        </a>
+      </div>
+      <div class="gallery__foot"><a class="btn btn--ghost" href="https://virtecstore.com/produtos">Ver todos os produtos</a></div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="produtos">
+    <div class="wrap">
+      <div class="section__head t-stagger" data-stagger>
+        <div>
+          <span class="eyebrow t-stagger-line t-stagger-line--1">Produtos</span>
+          <h2 class="t-stagger-line t-stagger-line--2">A linha Apple completa, e os drones DJI</h2>
+        </div>
+        <p class="lead t-stagger-line t-stagger-line--3">Do iPhone ao Apple Watch, você escolhe o modelo, a cor e a memória. Veja o estoque e os preços de cada categoria na loja online.</p>
+      </div>
+      <div class="catalog">
+        <a class="item item--wide reveal" href="https://virtecstore.com/categoria-produto/iphone">
+          <figure class="photo"><img src="assets/ig/ig-2026-07-10.jpg" alt="Atendente conferindo um iPhone no balcão da loja" loading="lazy" style="object-position: 50% 35%"></figure>
+          <div class="item__body"><h3>iPhone</h3><p>Os modelos atuais, do de entrada ao Pro Max, nas cores e memórias disponíveis.</p></div>
+        </a>
+        <a class="item item--narrow reveal" href="https://virtecstore.com/categoria-produto/mac">
+          <figure class="photo"><img src="assets/ig/ig-2026-11-12.jpg" alt="Atendente da Virtec trabalhando em um MacBook na loja" loading="lazy" style="object-position: 50% 60%"></figure>
+          <div class="item__body"><h3>MacBook</h3><p>Para estudo, trabalho e criação.</p></div>
+        </a>
+        <a class="item item--third item--text reveal" href="https://virtecstore.com/categoria-produto/ipad">
+          <span class="tag">Tablet</span>
+          <div class="item__body"><h3>iPad</h3><p>Para desenhar, estudar e assistir, com ou sem Apple Pencil.</p></div>
+        </a>
+        <a class="item item--third item--text reveal" href="https://virtecstore.com/categoria-produto/watch">
+          <span class="tag">Relógio e fones</span>
+          <div class="item__body"><h3>Watch e AirPods</h3><p>Relógio e fones que conversam com o seu iPhone.</p></div>
+        </a>
+        <a class="item item--third item--text item--blue reveal" href="https://virtecstore.com/categoria-produto/acessorios">
+          <span class="tag">Acessórios</span>
+          <div class="item__body"><h3>Acessórios</h3><p>Capas, películas, cabos e carregadores para os seus aparelhos.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="por-que">
+    <div class="wrap">
+      <div class="section__head t-stagger" data-stagger>
+        <div>
+          <span class="eyebrow t-stagger-line t-stagger-line--1">Por que a Virtec</span>
+          <h2 class="t-stagger-line t-stagger-line--2">Atendimento de quem conhece cada aparelho</h2>
+        </div>
+        <p class="lead t-stagger-line t-stagger-line--3">Quem atende é quem testa, filma e entrega os produtos que você vê no nosso Instagram.</p>
+      </div>
+      <div class="reasons">
+        <div class="reason reveal"><span class="reason__n">01</span><div><h3>Entrega imediata</h3><p>Os produtos em estoque saem na hora. Você não espera semanas por importação.</p></div></div>
+        <div class="reason reveal"><span class="reason__n">02</span><div><h3>Revenda autorizada DJI</h3><p>Drones com a procedência de uma loja que vende a marca oficialmente.</p></div></div>
+        <div class="reason reveal"><span class="reason__n">03</span><div><h3>Mais de 500 clientes</h3><p>Cada entrega vira um &ldquo;momento Apple&rdquo; registrado nos destaques do nosso perfil.</p></div></div>
+        <div class="reason reveal"><span class="reason__n">04</span><div><h3>Atendimento direto</h3><p>Você fala com a loja, tira dúvidas sobre modelos e recebe ajuda para escolher.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="troca">
+    <div class="wrap troca">
+      <div class="t-stagger" data-stagger>
+        <span class="eyebrow t-stagger-line t-stagger-line--1">Seminovos e troca</span>
+        <h2 class="t-stagger-line t-stagger-line--2">Seu Apple usado vale desconto no novo</h2>
+        <p class="lead t-stagger-line t-stagger-line--3">A Virtec avalia o seu iPhone, iPad ou Mac seminovo e usa o valor na compra do próximo. E se você quer economizar, temos seminovos selecionados.</p>
+        <div class="hero__actions t-stagger-line t-stagger-line--4">
+          <a class="btn btn--primary t-learn" href="https://api.whatsapp.com/send?phone=5551995563974&amp;text=Ol%C3%A1%2C%20quero%20avaliar%20meu%20aparelho%20na%20troca">Avaliar meu aparelho <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+          <a class="btn btn--ghost" href="https://virtecstore.com/categoria-produto/seminovos">Ver seminovos</a>
+        </div>
+      </div>
+      <ol class="troca__steps">
+        <li class="reveal"><b>01</b><span>Mande o modelo, a memória e o estado do seu aparelho</span></li>
+        <li class="reveal"><b>02</b><span>A loja avalia e diz quanto ele vale na troca</span></li>
+        <li class="reveal"><b>03</b><span>O valor vira desconto no produto novo, e o resto pode ir em até 18x</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="dji">
+    <div class="wrap dji">
+      <div class="t-stagger" data-stagger>
+        <span class="eyebrow t-stagger-line t-stagger-line--1">Revenda autorizada DJI</span>
+        <h2 class="t-stagger-line t-stagger-line--2">Drones DJI com procedência</h2>
+        <p class="lead t-stagger-line t-stagger-line--3">A Virtec é revendedora autorizada DJI. Do drone compacto para viagens ao modelo de filmagem, você compra de quem vende a marca oficialmente.</p>
+        <ul>
+          <li>Drones compactos para viagem e modelos de filmagem</li>
+          <li>Câmeras e acessórios DJI</li>
+          <li>Ajuda para escolher o modelo certo para o seu uso</li>
+        </ul>
+        <a class="btn btn--primary t-learn" href="https://api.whatsapp.com/send?phone=5551995563974&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Virtec%20e%20quero%20um%20or%C3%A7amento">Chamar no WhatsApp de drone <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+      </div>
+      <div class="dji__media">
+        <figure class="photo reveal"><img src="assets/ig/ig-2025-12-23.jpg" alt="Drone DJI Mini voando sobre a mão de um cliente ao ar livre" loading="lazy"></figure>
+        <figure class="photo reveal"><img src="assets/ig/ig-2026-07-31.jpg" alt="Atendente mostrando a caixa de um produto DJI" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clientes">
+    <div class="wrap">
+      <div class="section__head t-stagger" data-stagger>
+        <div>
+          <span class="eyebrow t-stagger-line t-stagger-line--1">Na loja</span>
+          <h2 class="t-stagger-line t-stagger-line--2">Mais de 500 momentos Apple entregues</h2>
+        </div>
+        <p class="lead t-stagger-line t-stagger-line--3">Unboxings, testes e entregas que acontecem na Virtec. Acompanhe pelo Instagram.</p>
+      </div>
+      <div class="gallery">
+        <a class="photo reveal" href="https://www.instagram.com/virtecstore/"><img src="assets/ig/ig-2026-11-09.jpg" alt="Mãos abrindo a caixa de um iPhone novo" loading="lazy"></a>
+        <a class="photo reveal" href="https://www.instagram.com/virtecstore/"><img src="assets/ig/ig-2026-09-13.jpg" alt="Atendente com vários iPhones sobre a mesa" loading="lazy"></a>
+        <a class="photo reveal" href="https://www.instagram.com/virtecstore/"><img src="assets/ig/ig-2026-11-12.jpg" alt="Atendente usando um MacBook na loja" loading="lazy"></a>
+        <a class="photo reveal" href="https://www.instagram.com/virtecstore/"><img src="assets/ig/ig-2026-07-10.jpg" alt="Atendente analisando um iPhone no balcão" loading="lazy"></a>
+      </div>
+      <div class="gallery__foot"><a class="btn btn--ghost" href="https://www.instagram.com/virtecstore/">Ver mais no @virtecstore</a></div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="como-comprar">
+    <div class="wrap">
+      <div class="section__head t-stagger" data-stagger>
+        <div>
+          <span class="eyebrow t-stagger-line t-stagger-line--1">Como comprar</span>
+          <h2 class="t-stagger-line t-stagger-line--2">Do pedido à entrega em três passos</h2>
+        </div>
+        <p class="lead t-stagger-line t-stagger-line--3">Compre pela loja online ou fale direto com a gente no WhatsApp.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><h3>Escolha o produto</h3><p>Navegue pela loja online ou mande no WhatsApp o modelo, a cor e a memória que você quer.</p></li>
+        <li class="reveal"><h3>Pague como preferir</h3><p>À vista ou em até 18x no cartão. Se tiver um Apple seminovo, ele entra como parte do pagamento.</p></li>
+        <li class="reveal"><h3>Leve para casa</h3><p>Combine a entrega ou a retirada e comece a usar.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="duvidas">
+    <div class="wrap">
+      <div class="section__head t-stagger" data-stagger>
+        <div>
+          <span class="eyebrow t-stagger-line t-stagger-line--1">Dúvidas</span>
+          <h2 class="t-stagger-line t-stagger-line--2">Perguntas frequentes</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="t-acc" data-open="false"><button class="t-acc-head" type="button" aria-expanded="false">Posso parcelar a compra?<span class="t-acc-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 6.5L8 10.5L12 6.5"/></svg></span></button><div class="t-acc-panel"><div class="t-acc-panel-inner"><p>Sim. Os produtos podem ser parcelados em até 18x no cartão.</p></div></div></div>
+        <div class="t-acc" data-open="false"><button class="t-acc-head" type="button" aria-expanded="false">Vocês aceitam meu aparelho usado na troca?<span class="t-acc-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 6.5L8 10.5L12 6.5"/></svg></span></button><div class="t-acc-panel"><div class="t-acc-panel-inner"><p>Sim. A Virtec avalia o seu Apple seminovo e o valor da avaliação vira desconto no produto novo.</p></div></div></div>
+        <div class="t-acc" data-open="false"><button class="t-acc-head" type="button" aria-expanded="false">Os produtos estão a pronta entrega?<span class="t-acc-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 6.5L8 10.5L12 6.5"/></svg></span></button><div class="t-acc-panel"><div class="t-acc-panel-inner"><p>Sim. Os produtos em estoque têm entrega imediata. Ao pedir o orçamento, a loja confirma se o modelo e a cor que você quer estão disponíveis.</p></div></div></div>
+        <div class="t-acc" data-open="false"><button class="t-acc-head" type="button" aria-expanded="false">A Virtec é revenda autorizada DJI?<span class="t-acc-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 6.5L8 10.5L12 6.5"/></svg></span></button><div class="t-acc-panel"><div class="t-acc-panel-inner"><p>Sim. A Virtec é revendedora autorizada DJI, então os drones vendidos aqui vêm de um canal oficial da marca.</p></div></div></div>
+        <div class="t-acc" data-open="false"><button class="t-acc-head" type="button" aria-expanded="false">Quais produtos Apple a loja vende?<span class="t-acc-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 6.5L8 10.5L12 6.5"/></svg></span></button><div class="t-acc-panel"><div class="t-acc-panel-inner"><p>iPhone, MacBook, iPad, Apple Watch e AirPods, além de seminovos e acessórios. A lista completa, com preços, está na loja online.</p></div></div></div>
+        <div class="t-acc" data-open="false"><button class="t-acc-head" type="button" aria-expanded="false">Como faço para pedir um orçamento?<span class="t-acc-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 6.5L8 10.5L12 6.5"/></svg></span></button><div class="t-acc-panel"><div class="t-acc-panel-inner"><p>Chame a Virtec no WhatsApp (51) 99556-3974 ou pelo Instagram @virtecstore, dizendo o produto, a cor e a memória que você quer.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contato">
+    <div class="wrap t-stagger" data-stagger>
+      <h2 class="t-stagger-line t-stagger-line--1">Viva aqui o seu momento Apple</h2>
+      <p class="lead t-stagger-line t-stagger-line--2">Fale com a Virtec no WhatsApp e receba o orçamento do seu próximo Apple.</p>
+      <div class="hero__actions t-stagger-line t-stagger-line--3">
+        <a class="btn btn--primary t-learn" href="https://api.whatsapp.com/send?phone=5551995563974&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Virtec%20e%20quero%20um%20or%C3%A7amento">Chamar no WhatsApp <span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span></a>
+        <a class="btn btn--ghost" href="https://virtecstore.com/produtos">Ver loja online</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="logo" href="#topo" aria-label="Virtec Store, início"><img src="assets/img/logo-virtec-crop.png" alt="Virtec Store" width="512" height="192"></a>
+        <p>Produtos Apple a pronta entrega e revenda autorizada DJI.</p>
+      </div>
+      <div><h3>Produtos</h3><ul><li><a href="https://virtecstore.com/categoria-produto/iphone">iPhone</a></li><li><a href="https://virtecstore.com/categoria-produto/mac">Mac</a></li><li><a href="https://virtecstore.com/categoria-produto/ipad">iPad</a></li><li><a href="https://virtecstore.com/categoria-produto/seminovos">Seminovos</a></li><li><a href="https://virtecstore.com/categoria-produto/Drones">Drones DJI</a></li></ul></div>
+      <div><h3>Loja</h3><ul><li><a href="#por-que">Por que a Virtec</a></li><li><a href="#troca">Troca de seminovos</a></li><li><a href="#como-comprar">Como comprar</a></li><li><a href="#duvidas">Dúvidas</a></li></ul></div>
+      <div><h3>Contato</h3><ul><li><a href="https://api.whatsapp.com/send?phone=5551995563974&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Virtec%20e%20quero%20um%20or%C3%A7amento">WhatsApp</a></li><li><a href="https://www.instagram.com/virtecstore/">Instagram</a></li><li><a href="https://virtecstore.com/produtos">Loja online</a></li></ul></div>
+    </div>
+    <p class="footer__legal">&copy;&nbsp;2026 Virtec Store. Apple, iPhone, MacBook e DJI são marcas de seus respectivos donos.</p>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav__toggle');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  });
+  nav.querySelectorAll('.nav__links a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // transitions.dev 26: spinning counter
+const STEP = (50 * Math.PI) / 180;
+const ENTER_MS = 120;
+const FADE_END = 1.8;
+const LAND_AT = 0.6;
+const ARRIVE_AT = 0.29;
+const CLEAR_MS = 200;
+function token(name, fallback) {
+  const v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(name));
+  return Number.isNaN(v) ? fallback : v;
+}
+// Lengths are in em (blur is a max() curve on the font size), so they are
+// measured in px on the drum itself and follow whatever size the number uses.
+function length(el, name, fallbackEm) {
+  const probe = document.createElement("span");
+  probe.style.cssText = `position:absolute;visibility:hidden;width:var(${name})`;
+  el.appendChild(probe);
+  const px = probe.getBoundingClientRect().width;
+  probe.remove();
+  return px || fallbackEm * (parseFloat(getComputedStyle(el).fontSize) || 24);
+}
+function readTokens(el) {
+  const css = getComputedStyle(document.documentElement);
+  const m = css.getPropertyValue("--reel-ease").match(/cubic-bezier\(([^)]+)\)/);
+  return {
+    stepDur: token("--reel-step-dur", 130),
+    stagger: token("--reel-stagger", 90),
+    ease: bezier(m ? m[1].split(",").map(parseFloat) : [0.35, -0.02, 0.43, 1]),
+    offset: length(el, "--reel-side-offset", 0.52),
+    sideScale: token("--reel-side-scale", 0.7),
+    sideBlur: length(el, "--reel-side-blur", 0.083),
+    sideOpacity: token("--reel-side-opacity", 0.17),
+    centerScale: token("--reel-center-scale", 0.9),
+    centerBlur: length(el, "--reel-center-blur", 0.042),
+    anticDur: token("--reel-antic-dur", 100),
+    anticScale: token("--reel-antic-scale", 0.94),
+    anticLift: length(el, "--reel-antic-lift", 0.125),
+    landDur: token("--reel-land-dur", 740),
+    landPeak: token("--reel-land-peak", 1.03),
+  };
+}
+function bezier([x1, y1, x2, y2]) {
+  const at = (a, b, t) => 3 * a * t * (1 - t) * (1 - t) + 3 * b * t * t * (1 - t) + t * t * t;
+  return (x) => {
+    if (x <= 0) return 0;
+    if (x >= 1) return 1;
+    let lo = 0, hi = 1, t = x;
+    for (let i = 0; i < 20; i++) {
+      if (at(x1, x2, t) < x) lo = t; else hi = t;
+      t = (lo + hi) / 2;
+    }
+    return at(y1, y2, t);
+  };
+}
+function smooth(x) {
+  x = Math.max(0, Math.min(1, x));
+  return x * x * (3 - 2 * x);
+}
+// Damped wave: starts at 1, crosses 0, swings negative (the bounce), ends at 0.
+function wave(s) {
+  return s >= 1 ? 0 : Math.exp(-3 * s) * Math.cos(3 * Math.PI * s) * (1 - s);
+}
+const WAVE_TROUGH = (() => {
+  let low = 0;
+  for (let i = 1; i < 400; i++) low = Math.min(low, wave(i / 400));
+  return -low;
+})();
+
+function buildColumns(el, str) {
+  el.replaceChildren();
+  const cols = [];
+  for (const ch of str) {
+    if (ch < "0" || ch > "9") {
+      const sep = document.createElement("span");
+      sep.className = "t-reel-sep";
+      sep.textContent = ch;
+      el.appendChild(sep);
+      continue;
+    }
+    const col = document.createElement("span");
+    col.className = "t-reel-col";
+    const sizer = document.createElement("span");
+    sizer.className = "t-reel-sizer";
+    sizer.textContent = "0";
+    col.appendChild(sizer);
+    const cells = [];
+    for (let d = 0; d < 10; d++) {
+      const cell = document.createElement("span");
+      cell.className = "t-reel-digit";
+      cell.textContent = String(d);
+      col.appendChild(cell);
+      cells.push(cell);
+    }
+    el.appendChild(col);
+    cols.push({ cells, digit: +ch });
+  }
+  return cols;
+}
+function rest(col, digit) {
+  col.cells.forEach((cell, d) => {
+    cell.style.transform = "none";
+    cell.style.filter = "none";
+    cell.style.zIndex = "";
+    cell.style.opacity = d === digit ? "1" : "0";
+  });
+}
+function look(dist, middle, o) {
+  const angle = Math.min(dist * STEP, Math.PI / 2);
+  // 1 in the middle, 0 at one step away, below 0 further back.
+  const face = (Math.cos(angle) - Math.cos(STEP)) / (1 - Math.cos(STEP));
+  return {
+    angle,
+    scale: o.sideScale + (middle - o.sideScale) * face,
+    back: dist <= 1 ? 1 + (o.sideOpacity - 1) * dist : o.sideOpacity * (1 - (dist - 1) / (FADE_END - 1)),
+  };
+}
+function place(col, pos, spread, middle, o, land) {
+  const radius = o.offset / Math.sin(STEP);
+  col.cells.forEach((cell, d) => {
+    let p = (((d - pos) % 10) + 10) % 10;
+    if (p > 5) p -= 10;
+    const dist = Math.abs(p);
+    if (dist >= FADE_END) { cell.style.opacity = "0"; return; }
+    const l = look(dist, middle, o);
+    // Upcoming digits sit above the middle, so the drum turns downward.
+    let y = (p < 0 ? 1 : -1) * radius * Math.sin(l.angle);
+    const blur = (o.centerBlur + (o.sideBlur - o.centerBlur) * Math.min(dist, 1)) * spread;
+    const away = Math.max(0, Math.min(1, (dist - 0.3) / 0.5));
+    let opacity = l.back * (1 - (1 - spread) * away);
+    let scale = l.scale;
+    let z = 100 - Math.round(dist * 10);
+    if (land && d === col.digit) {
+      y = y * land.arrive + land.lift;
+      scale = land.scale;
+      opacity = land.opacity;
+      z = 200;
+    }
+    cell.style.transform = `translateY(${y.toFixed(2)}px) scale(${scale.toFixed(4)})`;
+    cell.style.filter = blur > 0.01 ? `blur(${blur.toFixed(2)}px)` : "none";
+    cell.style.opacity = opacity.toFixed(3);
+    cell.style.zIndex = String(z);
+  });
+}
+// Rolls `el` from one number to another. Returns a function that cancels it.
+function roll(el, from, to) {
+  const str = to.toLocaleString("pt-BR");
+  el.setAttribute("aria-label", str);
+  const cols = buildColumns(el, str);
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    cols.forEach((c) => rest(c, c.digit));
+    return () => {};
+  }
+  const o = readTokens(el);
+  // Each column starts on its digit of the old number, aligned from the right.
+  const fromDigits = String(from).padStart(cols.length, "0").slice(-cols.length);
+  cols.forEach((c, i) => {
+    c.from = +fromDigits[i];
+    rest(c, c.from);
+    if (c.from === c.digit) c.done = true; // nothing to do
+  });
+  const t0 = performance.now();
+  let raf = 0;
+  const tick = () => {
+    const t = performance.now() - t0;
+    let running = false;
+    cols.forEach((c, i) => {
+      if (c.done) return;
+      const local = t - i * o.stagger;
+      if (local <= 0) { running = true; return; }
+      const total = (c.digit - c.from + 10) % 10;
+      // Time per number is fixed, so a longer roll takes longer.
+      const pos = c.from + total * o.ease(local / (total * o.stepDur));
+      const enter = Math.min(1, local / ENTER_MS);
+      if (c.landAt === undefined && c.from + total - pos < LAND_AT) c.landAt = t;
+      const since = c.landAt === undefined ? -1 : t - c.landAt;
+      if (since >= o.anticDur + o.landDur) {
+        rest(c, c.digit);
+        c.done = true;
+        return;
+      }
+      running = true;
+      const middle = 1 + (o.centerScale - 1) * enter;
+      let spread = enter;
+      let land = null;
+      if (since >= 0) {
+        // Start from how the target looks right now, so nothing jumps.
+        if (!c.landFrom) c.landFrom = look(c.from + total - pos, middle, o);
+        const arrive = 1 - smooth(since / (o.anticDur + o.landDur * ARRIVE_AT));
+        if (since < o.anticDur) {
+          // Anticipation: eases to --reel-antic-scale, pulling back against the roll.
+          const a = smooth(since / o.anticDur);
+          land = {
+            scale: c.landFrom.scale + (o.anticScale - c.landFrom.scale) * a,
+            lift: -o.anticLift * a,
+            opacity: c.landFrom.back + (1 - c.landFrom.back) * a,
+            arrive,
+          };
+        } else {
+          // Spring: snaps into the middle, past 100%, then settles.
+          const sp = since - o.anticDur;
+          const sn = sp / o.landDur;
+          const w = wave(sn);
+          land = {
+            scale: sn < 1 / 6 ? 1 + (o.anticScale - 1) * w : 1 - ((o.landPeak - 1) * w) / WAVE_TROUGH,
+            lift: -o.anticLift * w,
+            opacity: 1,
+            arrive,
+          };
+          spread = 1 - Math.min(1, sp / CLEAR_MS);
+        }
+      }
+      place(c, pos, spread, middle, o, land);
+    });
+    if (running) raf = requestAnimationFrame(tick);
+  };
+  tick();
+  return () => cancelAnimationFrame(raf);
+}
+
+
+  // transitions.dev 18: texts reveal ao entrar na tela; 26: contador ao entrar
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const show = el => {
+    if (el.matches('[data-stagger]')) { el.classList.remove('is-hiding', 'is-shown'); void el.offsetHeight; el.classList.add('is-shown'); }
+    else if (el.matches('.t-reel')) roll(el, 0, +el.dataset.reel);
+    else el.classList.add('is-in');
+  };
+  const targets = document.querySelectorAll('[data-stagger], .reveal, .t-reel');
+  if ('IntersectionObserver' in window && !reduce) {
+    document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 40 + 'ms'; });
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { show(e.target); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -10% 0px' });
+    targets.forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('[data-stagger]').forEach(el => el.classList.add('is-shown'));
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
+  }
+
+  // Vitrine: lê data/products.json (gerado por scripts/update-products.mjs a partir da loja).
+  // Se falhar, os cartões estáticos do HTML continuam na tela.
+  (async () => {
+    const grid = document.querySelector('.prods');
+    if (!grid) return;
+    try {
+      const res = await fetch('data/products.json', { cache: 'no-cache' });
+      if (!res.ok) return;
+      const { products } = await res.json();
+      if (!Array.isArray(products) || !products.length) return;
+      const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      const brl = n => n.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).split(',');
+      const chev = '<span class="t-learn-chevron" aria-hidden="true"><svg viewBox="0 0 16 16"><path class="t-learn-arm t-learn-arm-top" d="M6 4L10 8"/><path class="t-learn-arm t-learn-arm-bot" d="M10 8L6 12"/></svg></span>';
+      grid.innerHTML = products.map(p => {
+        const [int, cents] = brl(p.price);
+        return `<a class="prod reveal is-in" href="${esc(p.url)}">
+          <span class="prod__img"><img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" width="800" height="800"></span>
+          <span class="prod__name">${esc(p.name)}</span>
+          <span class="prod__spec">${esc(p.spec)}</span>
+          <span class="prod__price">R$ ${int}<small>,${cents}</small></span>
+          <span class="prod__more t-learn">Ver na loja ${chev}</span>
+        </a>`;
+      }).join('');
+    } catch (e) { /* mantém a vitrine estática */ }
+  })();
+
+  // transitions.dev 21: accordion expand
+  document.querySelectorAll('.t-acc').forEach(acc => {
+    const head = acc.querySelector('.t-acc-head');
+    head.addEventListener('click', () => {
+      const open = acc.getAttribute('data-open') === 'true';
+      acc.setAttribute('data-open', String(!open));
+      head.setAttribute('aria-expanded', String(!open));
+    });
+  });
+</script>
+</body>
+</html>
